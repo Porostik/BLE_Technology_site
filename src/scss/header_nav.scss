@@ -1,0 +1,108 @@
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+
+  .header__logo {
+    padding: 20px 0;
+    margin-right: 310px;
+  }
+
+  .header__nav {
+    display: flex;
+    list-style: none;
+
+    &__item {
+      text-decoration: none;
+      padding: 38px 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      margin-right: 60px;
+      color: #545454;
+      cursor: pointer;
+
+      &:hover {
+        color: #71c877;
+        border-bottom: 2px solid #42b549;
+      }
+    }
+
+    .nav-with-drop-list {
+      position: relative;
+
+      & .dropdown-list {
+        position: relative;
+        margin-right: 70px;
+        text-decoration: none;
+        padding: 38px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        color: #545454;
+        cursor: pointer;
+
+        &:after {
+          content: '';
+          padding: 38px 0;
+          position: absolute;
+          border: 5px solid transparent;
+          border-bottom: 0;
+          border-top-color: #3c3c3c;
+          top: 48%;
+          left: 115%;
+        }
+
+        &:hover {
+          border: none;
+        }
+      }
+
+      &:hover .list {
+        display: block;
+      }
+
+      & .list {
+        display: none;
+        position: absolute;
+        margin-top: 40.5px;
+        left: 0;
+        list-style: none;
+        background-color: #fff;
+        z-index: 1000;
+
+        &__item {
+          width: 210px;
+          height: 20px;
+          padding: 5px 0 5px 20px;
+          text-transform: uppercase;
+          font-family: 'Cabin', sans-serif;
+          font-size: 14px;
+          color: #8c8c8c;
+          cursor: pointer;
+
+          &:hover {
+            padding-left: 10px;
+            background-color: #f2f2f2;
+          }
+        }
+      }
+    }
+  }
+
+  .header__button {
+    padding: 15px 35px 15px 35px;
+    background-color: #2c67b1;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 0.8;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #bfd9f9;
+    transition: box-shadow 0.1s linear;
+
+    &:hover {
+      background-color: #f4213a;
+      box-shadow: 0px 0px 15px #d4a3c0;
+    }
+  }
+}
