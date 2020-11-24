@@ -6,7 +6,15 @@
   background-repeat: no-repeat;
   height: 600px;
   position: relative;
-  margin-top: 3px;
+  min-width: 1100px;
+
+  @media (max-width: 1200px) {
+    min-width: 900px;
+  }
+
+  @media (max-width: 992px) {
+    min-width: 600px;
+  }
 
   .header__title {
     width: 230px;
@@ -18,12 +26,22 @@
     font-family: 'Open Sans', sans-serif;
     position: absolute;
     top: 30%;
-    left: 17%;
+    left: 14em;
+
+    @media (max-width: 900px) {
+      width: 200px;
+      top: 34%;
+      left: 15em;
+    }
 
     .abbreviation {
       font-size: 80px;
       font-weight: 900;
       line-height: 1;
+
+      @media (max-width: 900px) {
+        font-size: 55px;
+      }
     }
 
     .company-name {
@@ -31,24 +49,33 @@
       font-weight: 700;
       background-color: #fff;
       color: #263499;
-      padding: 13px 9px;
+      padding: 9px;
       border-top-left-radius: 15px;
       border-bottom-right-radius: 15px;
+
+      @media (max-width: 900px) {
+        font-size: 12px;
+        padding: 9px;
+      }
     }
 
     .tech {
       font-size: 22px;
       font-weight: 900;
+
+      @media (max-width: 900px) {
+        font-size: 18px;
+      }
     }
   }
 
   .header__info {
+    width: 380px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 20%;
-    left: 43%;
-    width: 380px;
+    top: 7em;
+    left: 36em;
 
     &__item {
       display: flex;
@@ -63,7 +90,26 @@
         color: #fff;
         font-family: 'Open Sans', sans-serif;
         margin-left: 15px;
+
+        @media (max-width: 992px) {
+          font-size: 15px;
+        }
       }
+
+      @media (max-width: 992px) {
+        margin-bottom: 50px;
+      }
+    }
+
+    @media (max-width: 992px) {
+      width: 300px;
+      top: 10em;
+    }
+
+    @media (max-width: 900px) {
+      width: 300px;
+      top: 10em;
+      left: 32em;
     }
   }
 }
