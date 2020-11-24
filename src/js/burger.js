@@ -1,5 +1,5 @@
 const burger = document.querySelector('.burger');
-const headerNav = document.querySelector('.header__nav');
+const headerNav = document.querySelector('.header-list-wrapp');
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
