@@ -19,3 +19,23 @@
     padding: 0 30px;
   }
 }
+
+.button {
+  padding: 15px 35px 15px 35px;
+  background-color: #2c67b1;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0.8;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px #bfd9f9;
+  transition: box-shadow 0.1s linear;
+
+  &:hover {
+    background-color: #f4213a;
+    box-shadow: 0px 0px 15px #d4a3c0;
+  }
+}
