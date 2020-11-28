@@ -1,11 +1,35 @@
 .slider {
   position: relative;
   &__item {
-    display: flex;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+
+    &.left {
+      text-align: end;
+    }
+
+    &.right {
+      text-align: start;
+    }
 
     .product-img {
-      flex-grow: 0.7;
+      width: 706px;
+      height: 480px;
+
+      &.left {
+        border-top-right-radius: 10%;
+        border-bottom-right-radius: 10%;
+      }
+
+      &.right {
+        border-top-left-radius: 10%;
+        border-bottom-left-radius: 10%;
+      }
     }
+
     .product-content {
       padding: 56px 80px 142px 80px;
 
@@ -38,6 +62,10 @@
     position: absolute;
     top: 85%;
     left: 5em;
+
+    &.right {
+      left: 88%;
+    }
 
     .dot {
       width: 15px;
