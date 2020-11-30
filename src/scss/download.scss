@@ -1,6 +1,6 @@
 .download {
   background: url('img/download/1.png') center no-repeat;
-  padding: 214px 0;
+  padding: 210px 0;
 
   &__wrapper {
     display: flex;
@@ -37,6 +37,62 @@
       justify-content: space-between;
 
       .content__button {
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    padding: 150px 0;
+
+    &__wrapper {
+      justify-content: center;
+    }
+
+    &__content {
+      width: 410px;
+      text-align: center;
+
+      &__text {
+        padding-left: 0;
+        line-height: 2;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 120px 0;
+
+    &__content {
+      width: 380px;
+
+      .content__button {
+        img {
+          width: 170px;
+          height: 55px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__content {
+      .content__button {
+        img {
+          width: 170px;
+          height: 55px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 410px) {
+    padding: 100px 0;
+
+    &__content {
+      width: auto;
+
+      &__buttons {
+        flex-direction: column;
       }
     }
   }
