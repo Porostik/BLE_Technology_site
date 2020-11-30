@@ -1,0 +1,43 @@
+.download {
+  background: url('img/download/1.png') center no-repeat;
+  padding: 214px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    width: 430px;
+    text-align: end;
+
+    &__title {
+      .title {
+        letter-spacing: 1px;
+        font-size: 35px;
+        font-weight: 300;
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__text {
+      margin: 20px 0 45px 0;
+      padding-left: 40px;
+      line-height: 2;
+    }
+
+    &__buttons {
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+
+      .content__button {
+      }
+    }
+  }
+}
