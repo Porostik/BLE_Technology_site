@@ -1,0 +1,98 @@
+.contact-form {
+  background: url('img/contanct_form/2.png') center no-repeat;
+  position: relative;
+
+  .arrow {
+    content: '';
+    position: absolute;
+    border: medium solid transparent;
+    border-width: 35px;
+    left: 48%;
+    border-top-color: #fff;
+  }
+
+  .form-wrapper {
+    margin: 0 auto;
+    width: 635px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    padding: 90px 0 55px 0;
+
+    .form__title {
+      font-size: 35px;
+      font-weight: 200;
+      letter-spacing: 2px;
+      color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .form__text {
+      font-size: 16px;
+      font-weight: 300;
+      color: #d4d3d8;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    .contact {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 0.7;
+
+      .inputs-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .contact__input {
+          color: #afafaf;
+          width: 18.5em;
+          border: none;
+          border-radius: 10px;
+          padding: 15px 0 15px 30px;
+          outline: none;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 15px;
+          text-transform: capitalize;
+        }
+      }
+
+      .message {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        border-radius: 10px;
+        padding: 20px;
+        resize: none;
+        height: 210px;
+      }
+
+      .send-button {
+        background-color: initial;
+        border: 1px solid #ffffff;
+        align-self: center;
+        padding: 15px 65px;
+        text-transform: uppercase;
+        color: #ffffff;
+        outline: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f4213a;
+        }
+      }
+    }
+  }
+}
