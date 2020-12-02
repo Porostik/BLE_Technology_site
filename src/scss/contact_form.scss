@@ -1,5 +1,6 @@
 .contact-form {
-  background: url('img/contanct_form/2.png') center no-repeat;
+  margin-top: -3px;
+  background: url('img/contanct_form/1.png') center no-repeat;
   position: relative;
 
   .arrow {
@@ -9,6 +10,14 @@
     border-width: 35px;
     left: 48%;
     border-top-color: #fff;
+
+    @media (max-width: 700px) {
+      left: 45%;
+    }
+
+    @media (max-width: 450px) {
+      left: 42%;
+    }
   }
 
   .form-wrapper {
@@ -73,6 +82,7 @@
         padding: 20px;
         resize: none;
         height: 210px;
+        color: #afafaf;
       }
 
       .send-button {
@@ -91,6 +101,80 @@
 
         &:hover {
           background-color: #f4213a;
+        }
+      }
+    }
+
+    @media (max-width: 700px) {
+      width: 600px;
+
+      .contact {
+        .inputs-wrapper {
+          .contact__input {
+            width: 17em;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 640px) {
+      width: 500px;
+
+      .contact {
+        .inputs-wrapper {
+          .contact__input {
+            width: 14em;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 540px) {
+      width: 400px;
+
+      .form__text {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .contact {
+        .inputs-wrapper {
+          .contact__input {
+            width: 11em;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 450px) {
+      width: 300px;
+
+      .form__title {
+        font-size: 30px;
+      }
+
+      .form__text {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .contact {
+        .inputs-wrapper {
+          .contact__input {
+            width: 7.5em;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 340px) {
+      width: 280px;
+
+      .contact {
+        .inputs-wrapper {
+          .contact__input {
+            padding-left: 20px;
+          }
         }
       }
     }
